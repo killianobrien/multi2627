@@ -1,0 +1,51 @@
+% \documentclass[a4paper]{amsart}
+\documentclass[20pt, a4paper]{extarticle}
+\usepackage[]{graphicx}
+\usepackage{amsmath}
+\usepackage{extsizes}
+\date{}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\Hv}{\textrm{H}}
+\renewcommand{\b}{\mathbf}
+
+\begin{document}
+\title{6G5Z3011 Multi-variable calculus and analytical methods}
+\author{Tutorial Sheet 04}
+\maketitle
+
+Qs 1 -- 4 on \textbf{Line integrals}
+\begin{enumerate}
+    \item
+    A, B and D are the points $(0,0)$, $(2,0)$ and $(2,1)$ respectively. Evaluate the path integral
+    $$\int\limits_C (x^2 + 2y + 4) \, dx + (x^2 + 2y +4) \, dy$$
+    when (a) $C$ is the straight line segment AD and (b) when $C$ is the path made up of the straight line segments AB and BD.
+    \item
+    Evaluate the path integral
+    $$\int\limits_C (x^2 + 2y) \, dx + (x + y^2) \, dy $$
+    where $C$ is the segment of the line $y=2x+1$ from $(1,3)$ to $(3,7)$.
+    \item
+    Evaluate the path integral
+    $$\int\limits_C x \, dy + (y + 1) \, dx $$
+    where $C$ is
+    \begin{enumerate}
+    \item
+    the segment of the curve $y=\sin x$ from $(0,0)$ to $(\frac{\pi}{2},1)$,
+    \item
+    the segment of the line $y=\frac{2x}{\pi}$ from $(0,0)$ to $(\frac{\pi}{2},1)$,
+    \item
+    any other path from $(0,0)$ to $(\frac{\pi}{2},1)$.
+    \end{enumerate}
+    \item
+    When a force $\b{F}$ moves along a path $C$ in the plane then the total workis given by
+    $$\int\limits_C \b{F} . \, d \b{r}$$
+    where $\b{r}(x,y)$ is the position vector $x \b{i} + y \b{j}$.
+    
+    Show that when the force $\b{F}$, given by $\b{F}(x,y) = xy \b{i} + y^2 \b{j}$, moves along the path $C$, defined by $t \b{i} + t^2 \b{j}$ where $0 \leq t \leq 1$, the work done by the force is $\frac{7}{12}$.
+    \end{enumerate}
+
+
+\end{document}

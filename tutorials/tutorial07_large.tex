@@ -1,0 +1,105 @@
+\documentclass[20pt, a4paper]{extarticle}
+\usepackage[]{graphicx}
+\usepackage{amsmath}
+\usepackage{extsizes}
+\date{}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\Hv}{\textrm{H}}
+\renewcommand{\b}{\mathbf}
+
+\begin{document}
+\title{6G5Z3011 Multi-variable calculus and analytical methods}
+\author{Tutorial Sheet 7}
+\maketitle
+
+\textbf{Qs 1 -- 5} on working with the Laplace transform and its inverse. \\
+\textbf{Qs 6 -- 7} on solving ODEs and systems of ODEs using the Laplace transform method. 
+\begin{enumerate}
+    \item 
+    Find the general solution of the equation
+    $$ \frac{d^3y}{dx^3} = 6 .$$
+    
+    What does the solution become if we are given the conditions 
+    $$y(0)=0, \quad y(1)=0, \quad y(2)=1 ?$$
+    
+    \item
+    Using the fact that 
+    $$ \sinh{t} = \frac{1}{2} \left ( e^t -e^{-t} \right ) $$
+    and the definition of the Laplace transform show that
+    $$\laplace{\sinh{at}}  = \frac{a}{s^2 - a^2} .$$
+    
+    \item
+    Without using the tables (i.e. by working the integral definition of the transform) show that 
+    $$ \laplace{ t^2 } = \dfrac{2}{s^3}.$$
+    
+    \item
+    Using the table of standard transforms and transform properties find the Laplace transforms of the functions defined by
+    \begin{enumerate}
+    \item
+    $$1 + 2t + 3t^2 ,$$
+    \item
+    $$5\cos{t} ,$$
+    \item
+    $$4e^{2t}\sin{3t} .$$
+    \end{enumerate}
+    
+    \item
+    Using the table find the inverse Laplace transforms of
+    \begin{enumerate}
+    \item
+    $$\dfrac{7}{s+4} ,$$
+    \item
+    $$\dfrac{4s + 3}{s^2} ,$$
+    \item
+    $$\dfrac{2s+8}{(s+4)^2 + 100} ,$$
+    \item
+    $$\dfrac{3}{(s+1)(s-2)} .$$
+    \end{enumerate}
+    \item
+Use the Laplace transform method to solve the following differential equations subject to the given initial conditions
+
+\begin{enumerate}
+\item
+$$\frac{dy}{dt} + y = 1, \quad y(0)=0 .$$
+
+\item
+$$\frac{dy}{dt} - 2y = 4 e^{-2t}, \quad y(0)=2.$$
+
+\item
+$$\frac{d^2y}{dt^2} + 2y = 3t, \quad y(0)=1, \, y'(0)=7.$$
+
+\item
+$$\frac{d^2y}{dt^2} +2 \frac{dy}{dt} + y = 3, \quad y(0)=1, \, y'(0)=4.$$
+\end{enumerate}
+
+\bigskip
+
+\item
+Use the Laplace transform method to solve the following pairs of coupled differential equations.
+
+\begin{enumerate}
+\item
+\begin{align*}
+x + \frac{dy}{dt} &=2 \\
+\frac{dx}{dt} -6x - 13 y &=1
+\end{align*}
+with the initial conditions $x(0)=-10$ and $y(0)=3$.
+
+\item
+\begin{align*}
+\frac{d^2y}{dt^2} + 2 \frac{dx}{dt} + y &=0 \\
+\frac{dy}{dt} - \frac{dx}{dt} - 2y + 2x &= \sin t.
+\end{align*}
+with the initial conditions $x(0)=0$, $y(0)=0$ and $y'(0)=0$.	
+\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}

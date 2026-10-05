@@ -1,0 +1,95 @@
+% \documentclass[a4paper]{amsart}
+\documentclass[20pt, a4paper]{extarticle}
+\usepackage[]{graphicx}
+\usepackage{amsmath}
+\usepackage{extsizes}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\Hv}{\textrm{H}}
+
+\begin{document}
+\title{6G5Z3011 Multi-variable calculus and analytical methods}
+\author{Tutorial Sheet 02}
+\maketitle
+
+\textbf{Small increments formula questions}
+\begin{enumerate}
+
+\item
+Use the small increments formula to estimate the change in the function
+$$f(x,y)=\left ( x+2y^2 \right )^5$$
+when $x$ and $y$ both increase from 1 to 1.01. Check your answer by direct evaluation of the values of $f$.
+\item
+The pressure exerted by a column of gas of density $D$ and length $L$ is $P=\frac{1}{3} DL^2$. Find the percentage change in pressure caused by a 1\% increase in density and a 2\% increase in length.
+\item
+The surface area $S$ and the volume $V$ of a right circular cone of base radius $r$ and height $h$ are given by 
+\begin{align*}
+S&=\pi r^2 + \pi r \left ( r^2 + h^2 \right )^{\frac{1}{2}} \\
+V&=\frac{1}{3} \pi r^2 h
+\end{align*}
+\begin{enumerate}
+\item
+What percentage increase in $h$ will cancel out a 2\% decrease in $r$ if the volume is to required to remain the same. 
+\item
+In an attempt to estimate the value of $S$ the radius $r$ is measured as $5.00 \, \pm \, 0.01 \text{mm}$ and the height $h$ as  $12.00 \, \pm \, 0.01 \text{mm}$. Estimate the value of $S$ and quantify the possible error.
+
+If it is possible to measure just one of the quantities $h$ and $r$ more accurately, which one would you choose? Justify your answer.
+\end{enumerate}
+\item
+Consider the function $f$ of $n$ variables defined by
+$$f(x_1,x_2, \dots , x_n) = x_1^{p_1} x_2^{p_2} \dots x_n^{p_n} .$$
+Suppose that for each $r$ there is an $i_r$\% increase in the value of $x_r$. Show that the total increase in the value of $f$ is $p_1 i_1 + p_2 i_2 + \dots + p_n i_n$.
+
+\end{enumerate}
+\textbf{Chain rule and Jacobian questions}
+
+\begin{enumerate}
+    \setcounter{enumi}{4}
+\item
+
+
+
+
+Show that if the Cartesian  coordinates $(x,y)$ are transformed to the polar coordinates $(r,\theta)$ and $f(x,y)$ is a differentiable function of $x$and $y$ then 
+$$x \frac{\partial f}{\partial y} - y \frac{\partial f}{\partial x} = \frac{\partial f}{\partial \theta}.$$
+\item
+Consider the transformation from the coordinates $(x,y)$ to a new pair $(s,t)$ defined by 
+$$s=xy, \quad t=\frac{1}{y} .$$
+If $f(x,y)$ is a differentiable function of $x$ and $y$ show that 
+$$y \frac{\partial f}{\partial y} \left ( x \frac{\partial f}{\partial x} - y \frac{\partial f}{\partial y} \right ) = t \frac{\partial f}{\partial t} \left ( s \frac{\partial f}{\partial s} - t \frac{\partial f}{\partial t} \right ) .$$
+\item
+Show that the Jacobian of the transformation from Cartesian coordinates $(x,y)$ to polar coordinates $(r,\theta)$ is given by 
+$$\frac{\partial (x,y)}{\partial (r, \theta)} = r.$$
+\item
+Use the chain rule to prove that if a coordinate transformation from $(x,y)$ to $(s,t)$ is composed with one from $(s,t)$ to $(u,v)$ then 
+$$\frac{\partial (x,y)}{\partial (s, t)} \frac{\partial (s,t)}{\partial (u, v)} = \frac{\partial (x,y)}{\partial (u,v)}.$$
+Hence establish the reciprocal rule that if a transformation from $(x,y)$ to $(s,t)$ is composed with the inverse transformation from $(s,t)$ to $(x,y)$ then 
+$$\frac{\partial (x,y)}{\partial (s, t)} \frac{\partial (s,t)}{\partial (x, y)} = 1.$$
+\item
+Show that the Jacobian of the transformation from polar coordinates $(r,\theta)$ to Cartesian coordinates $(x,y)$ is given by 
+$$\frac{\partial (r,\theta)}{\partial (x, y)} = \frac{1}{r}.$$
+\item
+The Cartesian coordinates $(x,y)$ are transformed by the mapping 
+$$ s = y-x, \quad t=(y-x)^2.$$
+Complete the following table of coordinate values
+
+\bigskip
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline  $x$& 0 & 0 & 1 & 1 & 2 & 0 & 2 & 1 & 2 & 3 & 0 & 3 & 1 & 3 & 2 & 3 \\ 
+\hline  $y$& 0 & 1 & 0 & 1 & 0 & 2 & 1 & 2 & 2 & 0 & 3 & 1 & 3 & 2 & 3 & 3 \\ 
+\hline  $s$&  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+\hline  $t$&  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ 
+\hline 
+\end{tabular} 
+
+\bigskip
+
+Plot the resulting points $(s,t)$ from the table and comment on what you notice. Find the Jacobian $\frac{\partial (s,t)}{\partial (x, y)}.$ What can be said about the inverse transformation?
+\end{enumerate}
+
+
+\end{document}

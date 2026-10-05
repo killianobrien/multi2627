@@ -1,0 +1,57 @@
+\documentclass[a4paper]{amsart}
+\usepackage{a4wide}
+\usepackage[]{graphicx}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\Hv}{\textrm{H}}
+\renewcommand{\b}{\mathbf}
+
+\begin{document}
+\title{6G5Z3011 Multi-variable calculus and analytical methods}
+\author{Tutorial Sheet 06}
+\maketitle
+
+\begin{enumerate}
+    \item
+    Evaluate the integral,
+    $$ \oint_{C} 2xy \, \, dx + \left ( 3x^2 + 1 \right ) \, \, dy ,$$
+    where $C$ is the triangle with vertices $(0,0)$, $(1,0)$ and $(0,1)$.
+    \item
+    Evalaute the integral,
+    $$ \oint_{C} e^{\frac{y}{x}}  \, \, dx + y x^3 \, \, dy ,$$
+    where $C$ is the path from $(0,0)$ to $(1,1)$ along the curve given by $y=x^2$ and then back along the line given by $y=x$.
+    \item
+    Verify that Green's theorem holds for the integral
+    $$ \oint_{C} \sin y \, \, dx + \cos x \, \, dy ,$$
+    where $C$ is the square with sides given by $x=\frac{\pi}{4}$, $y=\frac{\pi}{4}$, $x=\frac{\pi}{2}$ and $y=\frac{\pi}{2}$.
+    \item
+    Verify that Green's theorem holds for the integral
+    $$ \oint_{C} \left ( x^3 y + x y^3 \right ) \, \, dx + (x + y+ 1) \, \, dy ,$$
+    where $C$ is the triangle with vertices $(0,1)$, $(1,0)$ and $(1,1)$.
+    \item
+    Give two reasons why Green's theorem cannot be applied to the double integral
+    $$\iint\limits_{R} \text{ln} (xy + 1) + x^2 + y^2  \, \, \, dx \, dy ,$$
+    where $R$ is the region bounded by the circles given by $x^2 + y^2=1$ and $x^2 + y^2 = 3$.
+    \item
+    Using Green's theorem or otherwise, evaluate the integral
+    $$\oint_{C} \left ( x^2 y \cos x + 2xy \sin x - y^2 e^x \right ) \,  dx + \left ( x^2 \sin x - 2y e^x \right ) \, dy ,$$
+    where $C$ is the curve given by $x^4 + y^4 = 1$.
+    \item
+    Using a path integral and suitable parametric equations for $x$ and $y$ show that the area of the circle of radius $r$ is $\pi r^2$.
+    \item
+    Using a path integral find the area $A$ enclosed by the curve $x=4 - y^2$ and the $y$-axis.
+    \item
+    Show that the integral
+    $$ \int_{\text{AB}} \left ( 2xy - y^4 + 3 \right )  \, dx + \left ( x^2 - 4xy^3 \right )  \, dy ,$$
+    where A is $(0,1)$ and B is $(2,3)$, is independent of the path joining A to B. Hence evaluate such an integral.
+    \item
+    Evaluate the path integral 
+    $$ \int_{\text{AB}} \left ( 3x^2 + ye^y \right ) \, dx + x(1+y)e^y \, dy ,$$
+    along the curve path given by $y=\sin x$ from the point A$(0,0)$ to the point B$(\pi, 0)$.
+\end{enumerate}
+
+
+\end{document}

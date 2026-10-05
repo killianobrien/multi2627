@@ -1,0 +1,81 @@
+% \documentclass[a4paper]{amsart}
+\documentclass[20pt, a4paper]{extarticle}
+\usepackage[]{graphicx}
+\usepackage{amsmath}
+\usepackage{extsizes}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\newcommand{\laplace}[1]{\mathcal{L}\{#1\}}
+\newcommand{\Hv}{\textrm{H}}
+
+\begin{document}
+\title{6G5Z3011 Multi-variable calculus and analytical methods}
+\author{Tutorial Sheet 03}
+\maketitle
+
+Qs 1,2 on \textbf{Taylor Series}, Qs 3 -- 6 on \textbf{Finding and classifying stationary points}
+\begin{enumerate}
+    \item
+    Use Taylor's theorem to expand the function 
+    $$f(x,y) = \text{ln}(x+y^2)$$
+    about the point $(1,0)$. Show that if $h$ and $k$ are small then
+    $$f(1+h,k) \approx h + \frac{1}{2} (-h^2 + 2k^2).$$
+    \item
+    Use Taylor's theorem to expand the function 
+    $$f(x,y) = e^{xy}$$
+    about the point $(0,0)$. Show that if $h$ and $k$ are small then
+    $$f(h,k) \approx 1+hk.$$
+    \item
+    Locate and classify the stationary points of the following functions.
+    \begin{enumerate}
+    \item
+    $f(x,y)=(x^3+3x)(y^2-6y)$
+    \item
+    $g(x,y)=x^4 + 4 x^2 y^2 - 2 x^2 + 2 y^2 - 1$
+    \end{enumerate}
+    \item
+    What is the maximum number of stationary points that the function
+    $$q(x,y) = ax^2 + 2hxy + by^2 + 2gy +2fx + c $$
+    can have? What conditions on the coefficients $a,b,c,f,g,h$ ensure that at the point $(1,1)$ there is (a) a maximum, (b) a minimum or (c) a saddle point?
+    \item
+    \begin{enumerate}
+    \item
+    Use a software package to plot the following surfaces of the following functions in the region $-3 \leq x \leq 3$ and $-3 \leq y \leq 3$.
+    \begin{enumerate}
+    \item[(a)]
+    $f(x,y)=(x^2 - 4)(y^2 - 4)$
+    \item[(b)]
+    $g(x,y) = (x^2 - 4)(4 - y^2)$
+    \item[(c)]
+    $h(x,y)=(4-x^2)(y^2-4)$
+    \item[(d)]
+    $i(x,y) = (4-x^2)(4-y^2)$
+    \end{enumerate}
+    \item
+    By inspecting the surface plot identify the location of any stationary points in the region and state what kind of points they are. Verify that the appropriate differential conditions hold, i.e.
+    \begin{enumerate}
+    \item
+    the first partial derivatives vanish at the stationary points,
+    \item at any saddle points we have $D < 0$,
+    \item
+    at any maxima we have $D > 0$ and the second partial derivative with respect to $x$ is negative
+    \item
+    at any minima we have $D > 0$ and the second partial derivative with respect to $x$ is positive.
+    \end{enumerate}
+    Note that $D$ is the Hessian determinant given by 
+    $$D= \frac{\partial^2 f}{\partial x^2}\frac{\partial^2 f}{\partial y^2} - \left ( \frac{\partial^2 f}{\partial x \partial y}\right )^2 .$$
+    \end{enumerate}
+    \item
+    Locate and classify the stationary points of the following functions and evaluate the function value at any extremum.
+    \begin{enumerate}
+    \item
+    $g(x,y)=e^{x+y} ( x^2 - xy + y^2)$
+    \item
+    $h(x,y) = 6 \text{ln} (x+y) - 2xy -4 x - 6y + x^3 + 7$
+    \end{enumerate}
+    \end{enumerate}
+
+
+\end{document}
