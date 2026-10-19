@@ -1,2 +1,2 @@
 # multi2627
-Stuff
+Stuff for the module
